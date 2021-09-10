@@ -5,4 +5,4 @@ Please Visit:
 https://socioplate.pythonanywhere.com/
 
 About me in this website:
-https://socioplate.pythonanywhere.com/developer/
+https://socioplate.pythonanywhere.com/developer
