@@ -1,0 +1,193 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+html, body {
+	background-color: #0e1722;
+}
+h2, a, p {
+	color: #fff;
+	font-family: Roboto;
+	text-decoration: none;
+    font-size: 20px;
+}
+p>a {
+	color: #fd084a;
+}
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+.flex {
+	display: flex;
+}
+.header-sub-title {
+  color: #fff;
+  font-family: "Courier";
+  font-size: 30px;
+  padding: 4px;
+}
+    .dcap {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 2px;
+    letter-spacing: 4px;
+    background-color: #0e1722;
+border: 0px;
+   }
+   
+   .dcap:hover {
+    background: #f40303;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f40303,
+    0 0 25px #f40303,
+    0 0 50px #f40303,
+    0 0 100px #f40303;
+   }
+   .img1c{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .c1w{
+    display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .ico{
+       max-height: 40vh;
+   }
+   .cc{
+       padding: 6px;
+
+       color: antiquewhite;
+       width: 90%;
+       background: #212529;
+       border-radius: 4px;
+   }
+   .txtcont{
+       margin: 9px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .maincont{
+       width:55%;
+       background-color: #212529;
+   }
+   .txt{
+    margin: 0 0 3px;
+padding: 0;
+color: #fff;
+text-align: center;
+padding: 4px;
+   }
+   #lg{
+       color: #0d6efd;
+       text-decoration: underline;
+       font-family: 'Segoe UI', Courier, monospace;
+   }
+   @media screen and (max-width: 450px){
+    html, body {
+	background-color: #0e1722;
+}
+h2, a, p {
+	color: #fff;
+	font-family: Roboto;
+	text-decoration: none;
+    font-size: 20px;
+}
+p>a {
+	color: #fd084a;
+}
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+.flex {
+	display: flex;
+}
+.header-sub-title {
+  color: #fff;
+  font-family: "Courier";
+  font-size: 30px;
+  padding: 4px;
+}
+    .dcap {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 2px;
+    letter-spacing: 4px;
+    background-color: #0e1722;
+border: 0px;
+   }
+   
+   .dcap:hover {
+    background: #f40303;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f40303,
+    0 0 25px #f40303,
+    0 0 50px #f40303,
+    0 0 100px #f40303;
+   }
+   .img1c{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .c1w{
+    display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .ico{
+       max-height: 40vh;
+   }
+   .cc{
+       padding: 6px;
+
+       color: antiquewhite;
+       width: 90%;
+       background: #212529;
+       border-radius: 4px;
+   }
+   .txtcont{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 9px;
+   }
+   .maincont{
+       width:95%;
+       background-color: #212529;
+   }
+   .txt{
+    margin: 0 0 3px;
+padding: 0;
+color: #fff;
+text-align: center;
+padding: 4px;
+   }
+   #lg{
+       color: #0d6efd;
+       text-decoration: underline;
+       font-family: 'Segoe UI', Courier, monospace;
+   }
+   }
