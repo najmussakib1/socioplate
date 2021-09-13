@@ -43,7 +43,7 @@
     </nav>
     <h1 id='wctxt'>welcome @ <u>{{username.username}}</u></h1>
     <br>
-    <form action="createpost" method="post">
+    <form action="/createpost/" method="post">
             {% csrf_token %}
         <textarea class="form-control pst" rows="3" name="contentarea" id="contentarea" placeholder="your post content..." required></textarea>
   </div>
