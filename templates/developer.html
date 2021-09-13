@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Developer-Najmus Sakib!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/dev.css' %}">
+</head>
+<body>
+    {% if loggedin %}
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Socioplate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/myprof">My Profile</a>
+                        </li>
+                        </ul>
+                        <form action="/search/" method='GET' class="d-flex">
+                                 
+                                <input class="form-control me-2" id='' name="search" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                              <a id='lg' href="/log-out">Log-Out</a>
+                </div>
+                
+                
+            </div>
+        </nav>
+    {% else %}
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Socioplate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                                <li class="nav-item mx-2">
+                                    <a href="/signin/"><button class="dcap">Log-in</button></a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                        <a href="/create/"><button class="dcap">Sign-Up</button></a>
+                                    </li>
+                                </ul>
+            </div>
+            
+        </nav>
+    {% endif %}
+    <div class="flex">
+            <p class="header-sub-title" id="word"></p><p class="header-sub-title blink">|</p>
+        </div>
+        
+        
+
+    
+    <div class="txtcont">
+        <div class="maincont">
+            <p class="txt">Hola! This is Najmus Sakib. I am a Full-satck webdeveloper and a PYTHON Programmer. This is my first Project.</p>
+        </div>
+    </div>
+    <div class="img1c">
+            <img class="ico" src="{% static 'images/developermain2.jpg' %}" alt="">
+        </div>
+        <div class="txtcont">
+                <div class="maincont">
+                    <h2 class="txt"><u>About Me</u></h2>
+                    <p class="txt">I live in Bangladesh. I am  a student of class 10. My father's name is Md. Humayun kabir. My mother's name is Nasima akther.</p>
+                    <h2 class="txt"><u>Contact</u></h2>
+                    <p  class="txt">Dhaka, Bangladesh</p>
+                    <p class="txt"><u>E-mail</u>: sakibthoha5@gmail.com</p>
+                </div>
+            </div>
+            <div class="img1c">
+                    <img class="ico" src="{% static 'images/dev2.jpg' %}" alt="">
+                </div>
+                <div class="txtcont">
+                        <div class="maincont">
+                            <h2 class="txt"><u>commitment</u></h2>
+                            <p class="txt">This is my first project and this is the first release. The updated version will knock on your screen very very soon. Thank you!</p>
+                        </div>
+                    </div>   
+    <script>
+    const words = ["This is NAJMUS SAKIB",'a NAJMUS SAKIB universe'];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+            setTimeout(deletingEffect, 500)
+			return false;
+		};
+		timer = setTimeout(loopTyping,200);
+	};
+    setTimeout(loopTyping, 500)
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 200);
+	};
+	setTimeout(loopDeleting, 500);
+};
+
+typingEffect();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
